@@ -218,8 +218,8 @@ t:1, filterType:0 歌单
 
 ### *获取歌曲评论
 [get] http://mobileapi.5sing.kugou.com/comments/list
-* rootId: 歌曲id
-* rootKind: yc, fc, bz
+* rootId: 歌曲id或者用户id
+* rootKind: yc, fc, bz, guestBook
 * maxId: 0
 * fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,DJ
 * version: api版本
