@@ -4,6 +4,7 @@
 中国原创音乐基地5sing移动端API
 
 ## API
+currentVersion: 6.0.3
 
 ### *检查登录状态
 [get] http://mobileapi.5sing.kugou.com/user/checksign
@@ -13,6 +14,12 @@
 ### *获取轮播图列表
 [get] http://mobileapi.5sing.kugou.com/other/getAdvert
 * advert_id: 轮播图id
+* version: api版本
+
+### *每日推荐
+[get] http://mobileapi.5sing.kugou.com/song/getRecommendDailyList
+* pagesize: 每页条数
+* page: 页数
 * version: api版本
 
 ### *获取专栏
@@ -120,4 +127,18 @@
 * pagesize: 每页条数
 * songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
 * userfields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
+
+### *广场
+[get] http://mobileapi.5sing.kugou.com/message/square
+* ordering: 0, 1 0:最新, 2:最热
+* sign: token
+* pageindex: 页数
+* pagesize: 每页条数
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,DJ
+
+### *获取歌曲地址
+[get] http://mobileapi.5sing.kugou.com/song/getSongUrl
+* songtype: yc, fc, bz
+* songid: 歌曲id
 * version: api版本
