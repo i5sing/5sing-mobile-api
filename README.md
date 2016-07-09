@@ -51,6 +51,26 @@
 * index: 页数
 * version: api版本
 
+### *筛选歌单
+[get] http://goapi.5sing.kugou.com/search/songSquare
+* label: 歌单标签
+* sortType: 0, 1
+* pn: 页数
+* ps: 每页条数
+* version: api版本
+
+### *歌单详情
+[get] http://mobileapi.5sing.kugou.com/song/getsonglist
+* id: 歌单id
+* version: api版本
+
+### *歌单中歌曲列表
+[get] http://mobileapi.5sing.kugou.com/song/getsonglistsong
+* id: 歌单id
+* songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
+* userfields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
+
 ### *音乐人列表
 [get] http://mobileapi.5sing.kugou.com/user/listmusician
 * pageindex: 页数
@@ -72,4 +92,16 @@
 * pageindex: 页数
 * pagesize: 每页条数
 * fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,DJ
+* version: api版本
+
+### *检查是否关注歌手
+[get] http://mobileapi.5sing.kugou.com/follow/check
+* followuserid: 用户id
+* sign: token
+* version: api版本
+
+### *检查是否收藏歌单
+[get] http://mobileapi.5sing.kugou.com/song/songlistcollectioncheck
+* id: 歌单id
+* sign: token
 * version: api版本
