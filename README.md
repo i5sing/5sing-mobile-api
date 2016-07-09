@@ -105,3 +105,19 @@
 * id: 歌单id
 * sign: token
 * version: api版本
+
+### *获取用户信息
+[get] http://mobileapi.5sing.kugou.com/user/get
+* userid: 用户id
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F,OP,UBG,ISH
+* version: api版本
+
+### *获取用户歌曲
+[get] http://mobileapi.5sing.kugou.com/song/user
+* userid: 用户id
+* songtype: yc, fc, bz
+* pageindex: 页数
+* pagesize: 每页条数
+* songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
+* userfields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
