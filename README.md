@@ -120,6 +120,12 @@ currentVersion: 6.0.3
 * sign: token
 * version: api版本
 
+### *添加访问足迹
+[get] http://mobileapi.5sing.kugou.com/user/addvisit
+* sign: token
+* owneruserid: 用户id
+* version: api版本
+
 ### *获取用户信息
 [get] http://mobileapi.5sing.kugou.com/user/get
 * userid: 用户id
@@ -187,3 +193,64 @@ t:1, filterType:0 歌单
 * remember: yes  
 登录成功后从Cookie中提取sign值
 
+### *获取收藏的歌单
+[get] http://mobileapi.5sing.kugou.com/song/songlistcollectionlist
+* sign: token
+* pageindex: 页数
+* pagesize: 每页条数
+* userfields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
+
+### *获取歌曲信息
+[get] http://mobileapi.5sing.kugou.com/song/newget
+* songtype: fc, yc, bz
+* songid: 歌曲id
+* songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
+* userfields: ID,NN,I
+* versiong: api版本
+
+### *获取歌曲支持信息
+[get] http://mobileapi.5sing.kugou.com/song/songwithuser
+* songid: 歌曲id
+* songtype: fc, yc, bz
+* sign: token
+* version: api版本
+
+### *获取歌曲评论
+[get] http://mobileapi.5sing.kugou.com/comments/list
+* rootId: 歌曲id
+* rootKind: yc, fc, bz
+* maxId: 0
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,DJ
+* version: api版本
+
+### *获取歌曲粉丝贡献榜
+[get] http://mobileapi.5sing.kugou.com/song/listforsupportcardfans
+* songid: 歌曲id
+* songtype: yc, fc, bz
+* limit: 条数
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC
+* version: api版本
+
+### *获取歌手关注列表
+[get] http://mobileapi.5sing.kugou.com/follow/list
+* userid: 用户id
+* pagesize: 每页条数
+* pageindex: 页数
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
+
+### *获取歌手粉丝列表
+[get] http://mobileapi.5sing.kugou.com/fans/list
+* userid: 用户id
+* pagesize: 每页条数
+* pageindex: 页数
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
+
+### *获取歌手访客列表
+[get] http://mobileapi.5sing.kugou.com/user/visitors
+* sign: token
+* owneruserid: 用户id
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
+* version: api版本
