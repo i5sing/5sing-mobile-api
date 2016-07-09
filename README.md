@@ -172,3 +172,18 @@ t:0, filterType:2 翻唱
 t:0, filterType:3 伴奏   
 t:2, filterType:0 用户   
 t:1, filterType:0 歌单   
+
+### *登录
+[get] http://mobileapi.5sing.kugou.com/user/login
+* username: 用户名
+* password: 密码
+* sign: 算法暂时未知
+* version: api版本
+
+###### 关于登录解决方案
+[post] http://5sing.kugou.com/m/login.html
+* name: 用户名
+* pwd: 密码
+* remember: yes  
+登录成功后从Cookie中提取sign值
+
