@@ -1,7 +1,7 @@
 # 5sing-mobile-api
 
 ## Description
-5sing移动端API
+中国原创音乐基地5sing移动端API
 
 ## API
 
@@ -10,24 +10,24 @@
 * sign: token
 * version: api版本
 
-### *乐库-轮播图
+### *获取轮播图列表
 [get] http://mobileapi.5sing.kugou.com/other/getAdvert
 * advert_id: 轮播图id
 * version: api版本
 
-### *乐库-推荐
+### *获取专栏
 [get] http://mobileapi.5sing.kugou.com/song/GetRecommend
 * version: api版本
 
-### *排行榜
+### *获取排行榜概览
 [get] http://mobileapi.5sing.kugou.com/rank/list
 * version: api版本
 
-### *排行榜更新列表
+### *获取排行榜更新时间列表
 [get] http://mobileapi.5sing.kugou.com/song/listsupportcardcycle
 * version: api版本
 
-### *排行榜详情
+### *获取排行榜详情
 [get] http://mobileapi.5sing.kugou.com/rank/detail
 * id: yc, fc, bz, list23
 * pageindex: 页数
@@ -37,7 +37,7 @@
 * songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
 * version: api版本
 
-### *最受欢迎歌曲列表
+### *获取最受欢迎歌曲列表
 [get] http://mobileapi.5sing.kugou.com/song/listbysupportcard
 * time: 排行榜更新列表中的time
 * limit: 获取条数
@@ -46,7 +46,7 @@
 * maxid: 0
 * version: api版本
 
-### *歌单
+### *获取歌单列表
 [get] http://goapi.5sing.kugou.com/getSongListSquareRecommended
 * index: 页数
 * version: api版本
@@ -59,7 +59,7 @@
 * ps: 每页条数
 * version: api版本
 
-### *歌单详情
+### *获取歌单详情
 [get] http://mobileapi.5sing.kugou.com/song/getsonglist
 * id: 歌单id
 * version: api版本
@@ -79,14 +79,14 @@
 * songfields: ID,SN,SK,SW,S,UID,DD
 * version: api版本
 
-### *新入驻音乐人列表
+### *获取新入驻音乐人列表
 [get] http://mobileapi.5sing.kugou.com/musician/latestList
 * pagesize: 每页条数
 * pageindex: 页数
 * songfields: ID,SN,SK,SW,SS,ST,SI,CT,M,S,ZQ,WO,ZC,HY,YG,CK,D,RQ,DD,E,R,RC,SG,C,CS,LV,LG,SY,UID,PT,SCSR,SC
 * version: api版本
 
-### *动态
+### *获取动态
 [get] http://mobileapi.5sing.kugou.com/message/dynamic
 * sign: token
 * pageindex: 页数
