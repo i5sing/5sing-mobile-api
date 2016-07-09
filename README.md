@@ -26,6 +26,13 @@ currentVersion: 6.0.3
 [get] http://mobileapi.5sing.kugou.com/song/GetRecommend
 * version: api版本
 
+### *获取专栏详情
+[get] http://mobileapi.5sing.kugou.com/song/GetRecommendSingle
+* channel_id: 专栏id
+* page: 页数
+* pagesize: 每页条数
+* version: api版本
+
 ### *获取排行榜概览
 [get] http://mobileapi.5sing.kugou.com/rank/list
 * version: api版本
@@ -142,3 +149,26 @@ currentVersion: 6.0.3
 * songtype: yc, fc, bz
 * songid: 歌曲id
 * version: api版本
+
+### *获取直播列表
+[get] http://5singlive.kugou.com/api.php
+* action: Mobile
+* fun: getTrailer
+* version: api版本
+
+### *搜索
+[get] http://goapi.5sing.kugou.com/search/search
+* k: 关键词
+* t: 类型
+* filterType: 过滤类型
+* sortType: 0
+* ps: 每页条数
+* pn: 页数
+* version: api版本
+
+###### 备注：
+t:0, filterType:1 原创   
+t:0, filterType:2 翻唱   
+t:0, filterType:3 伴奏   
+t:2, filterType:0 用户   
+t:1, filterType:0 歌单   
