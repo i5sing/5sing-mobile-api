@@ -317,3 +317,13 @@ t:1, filterType:0 歌单
 * page: 页码
 * pagesize: 每页条数
 * version: api版本
+
+### *获取专题列表
+[get] http://topic.5sing.kugou.com/index.php
+* m: index
+* f: allThemes
+
+### *获取总览信息
+[get] http://mobileapi.5sing.kugou.com/message/tips
+* sign: token
+* version: api版本
