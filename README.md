@@ -254,3 +254,66 @@ t:1, filterType:0 歌单
 * owneruserid: 用户id
 * fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,YCRQ,FCRQ,CC,BG,DJ,RC,MC,AU,SR,SG,VG,ISC,F
 * version: api版本
+
+### *收藏歌单
+[get] http://mobileapi.5sing.kugou.com/song/songlistcollectionadd
+* id: 歌单id
+* sign: token
+* version: api版本
+
+### *取消收藏歌单
+[get] http://mobileapi.5sing.kugou.com/song/songlistcollectiondelete
+* id: 歌单id
+* sign: token
+* version: api版本
+
+### *收藏或取消收藏歌曲
+[post] http://goapi.5sing.kugou.com/postLocalMusicbox
+```json
+{
+  "Uid": 18913045,
+  "DataDel": [],
+  "DataAdd": [
+    {
+      "ID": 3147039,
+      "SK": "yc",
+      "SN": "积梦成渊"
+    }
+  ]
+}
+```
+
+### *关注歌手
+[get] http://mobileapi.5sing.kugou.com/follow/create
+* followuserid: 用户id
+* sign: token
+* version: api版本
+
+### *取消关注歌手
+[get] http://mobileapi.5sing.kugou.com/follow/delete
+* followuserid: 用户id
+* sign: token
+* version: api版本
+
+### *赞
+[get] http://mobileapi.5sing.kugou.com/message/operateLike
+* id: id
+* rootKind: yc, fc, bz…
+* sign: token
+* clientliked: 0: 赞, 1: 取消
+* version: api版本
+
+### *与我相关
+[get] http://mobileapi.5sing.kugou.com/message/related
+* sign: token
+* maxId: 0
+* fields: ID,NN,I,B,P,C,SX,E,M,VT,CT,TYC,TFC,TBZ,TFD,TFS,SC,DJ
+* version: api版本
+
+### *获取私信消息
+[get] http://mobileapi.5sing.kugou.com/message/showletterbypage
+* sign: token
+* relationuserid: 相关用户id, 10000: 系统消息
+* page: 页码
+* pagesize: 每页条数
+* version: api版本
