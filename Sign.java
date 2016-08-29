@@ -4,8 +4,8 @@ import java.security.MessageDigest;
 	
         /*	调用方式：
       	//比如账号 15077778888 密码 123456 其中 5SING_KUGOU是必须加上去的，拼接就好。
-	      //基于安全问题，本人所用的是假账号，如您测试时，请用自己去官网注册账号。
-        String str=a("150777788885SING_KUGOU123456");
+	//基于安全问题，本人所用的是假账号，如您测试时，请用自己去官网注册账号。
+        String str=signAccount("150777788885SING_KUGOU123456");
         System.out.print(str);
          */
 
