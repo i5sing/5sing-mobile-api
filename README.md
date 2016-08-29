@@ -183,7 +183,7 @@ t:1, filterType:0 歌单
 [get] http://mobileapi.5sing.kugou.com/user/login
 * username: 用户名
 * password: 密码
-* sign: 算法暂时未知
+* sign: 已破解（详情请看sign.java）
 * version: api版本
 
 ###### 关于登录解决方案
